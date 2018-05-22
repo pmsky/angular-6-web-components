@@ -8,14 +8,16 @@
 </head>
 
 <body>
+    Hi this is head
   <custom-button label="First Value"></custom-button>
+  <custom-button2></custom-button2>
 
   <script>
-    const button = document.querySelector('custom-button');
+    const button = document.querySelector('custom-button2');
     button.addEventListener('action', (event) => {
       console.log(`"action" emitted: ${event.detail}`);
     })
-    setTimeout(() => button.label = 'Second Value', 3000);
+    setTimeout(() => button.label = 'Second Value2', 3000);
 
   </script>
 </body>
